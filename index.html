@@ -7,29 +7,82 @@
     <title>Kalkulator Segitiga</title>
 </head>
 <body>
-    <h1>Welcome to Katik</h1>
-    <p>Hai Sobat, Selamat datang di Katik :] <br>
+    <h1 style="text-align: center;">Welcome to Katik</h1>
+    <p style="text-align: center;">Hai Sobat, Selamat datang di Katik :] <br>
         Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
     </p>
-    
+
+    <section>
+        <button class="bentuk" style="background-color: #749BC2;">Segitiga</button><br>
+        <button class="bentuk">Jajar Genjang</button>
+        <a href="#Luas"> <button class="hitung">Go to Hitung Luas</button> </a>
+        <a href="#Keliling"> <button class="hitung">Go to Hitung Keliling</button> </a>
+    </section>
+
     <header>
-        <h1>Kalkulator Luas dan Keliling Segitiga</h1>
+        <h2 id="Luas">Luas Segitiga</h2>
     </header>
     <main>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLW52d-rIO-rM8jbg1t9OTuTXwuFfjFPlUJw&usqp=CAU" style="display: block; margin-left: auto; margin-right: auto; width: 50%; width: 200px"> 
+        <p>Rumus Luas Segitiga yaitu :</p>
+        <div>
+            <b>L = 1/2 x a x t</b>
+            <p>
+                Di mana:<br>
+                L = Luas <br>
+                a = Panjang Alas <br>
+                t = Tinggi <hr>
+            </p>
+        </div>
         <section class="input-section">
-                <label for="tinggi-input">Tinggi Segitiga</label>
+            <h2 style="text-align: center;">Hitung Luas Segitiga</h2>    
+            <label for="tinggi-input">Tinggi Segitiga</label>
                 <input type="number" id="tinggi-input" placeholder="0">
                 <label for="alas-input">Alas Segitiga</label>
                 <input type="number" id="alas-input" placeholder="0">
             
             <section>
-                <button>Go to Hitung Luas</button>
-                <button>Hitung</button>
-                <button>Reset</button>
+                <button class="hitung">Hitung</button>
+                <button class="hitung">Reset</button>
+            </section>
+            </section>
+           
+    </main>
+
+    <header>
+        <h2 id="Keliling">Keliling Segitiga</h2>
+    </header>
+    <main>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLW52d-rIO-rM8jbg1t9OTuTXwuFfjFPlUJw&usqp=CAU" style="display: block; margin-left: auto; margin-right: auto; width: 50%; width: 200px"> 
+        <p>Rumus Keliling Segitiga yaitu :</p>
+        <div>
+            <b>K = S1 + S2 + S3</b>
+            <p>
+                Di mana:<br>
+                K = Keliling <br>
+                S1 = Sisi A <br>
+                S2 = Sisi B <br>
+                S3 = Sisi C <hr>
+            </p>
+        </div>
+        <section class="input-section">
+            <h2 style="text-align: center;">Hitung Keliling Segitiga</h2>    
+                <label for="sisia-input">Sisi A Segitiga</label>
+                <input type="number" id="sisia-input" placeholder="0">
+                <label for="sisib-input">Sisi B Segitiga</label>
+                <input type="number" id="sisib-input" placeholder="0">
+                <label for="sisic-input">Sisi C Segitiga</label>
+                <input type="number" id="sisic-input" placeholder="0">
+            <section>
+                <button class="hitung">Hitung</button>
+                <button class="hitung">Reset</button>
             </section>
             </section>
 
+
+            
     </main>
+
 
 </body>
 </html>
